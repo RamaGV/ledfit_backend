@@ -1,7 +1,6 @@
 // src/routes/routines.routes.ts
-
-const express = require("express");
-const router = express.Router();
+import { Router } from "express";
+const router = Router();
 
 router.get("/all", async (req: any, res: any) => {
   try {
@@ -14,4 +13,4 @@ router.get("/all", async (req: any, res: any) => {
   }
 });
 
-module.exports = router;
+export default router;
