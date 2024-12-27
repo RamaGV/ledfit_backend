@@ -4,6 +4,7 @@ require("dotenv").config();
 import express from "express";
 import cors from "cors";
 const databaseService = require("./services/database.service");
+import exercisesRoutes from "./routes/exercises.routes";
 import routinesRoutes from "./routes/routines.routes";
 import usersRoutes from "./routes/users.routes";
 
@@ -27,6 +28,7 @@ app.use(cors({}));
     });
 
     // Rutas
+    app.use("/api/exercises", exercisesRoutes);
     app.use("/api/routines", routinesRoutes);
     app.use("/api/users", usersRoutes);
 
