@@ -11,7 +11,7 @@ import usersRoutes from "./routes/users.routes";
 const app = express();
 
 const port = process.env.PORT || 5000;
-const uri = "mongodb://localhost:27017/ledfit";
+const uri = "mongodb+srv://funesgvr:<4522Ramiro2.>@ledfit.z7box.mongodb.net/?retryWrites=true&w=majority&appName=LedFit";
 
 app.use(express.json()); // Middleware para manejar JSON
 app.use(cors({}));
